@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<ndll name="jwswrve" if="ios"/>
+	
+	<!-- Use the following for an Android Java extension, not needed otherwise -->
+	
+	<dependency name="jwswrve" path="dependencies/android" if="android" />
+	<dependency name="appcompat" path="appcompat" if="android" />
+	<android extension="com.jamwix.JWSwrve" />
+	
+</project>
