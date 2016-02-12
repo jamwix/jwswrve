@@ -13,9 +13,61 @@
 	<files id="iphone">
 		
 		<compilerflag value="-Iinclude"/>
-        <compilerflag value="-I/Users/Shared/sponsorpay-sdk-lib-ios" />
+        <compilerflag value="-I/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation" />
+        <compilerflag value="-I/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/Categories" />
+        <compilerflag value="-I/Users/bbooth/work/swrve-ios-sdk/Sdk/Locations" />
+        <compilerflag value="-I/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions" />
+        <compilerflag value="-I/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk" />
+        <compilerflag value="-I/Users/bbooth/work/swrve-ios-sdk/Sdk/Track" />
 		
-		<file name="iphone/JWFyber.mm"/>
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/Categories/UINavigationController+KeyboardResponderFix.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/Categories/UIWebView+YouTubeVimeo.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveContentHTML.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveContentImage.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveContentItem.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveContentSpacer.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveContentVideo.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversation.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationAtom.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationAtomFactory.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationButton.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationCampaign.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationContainerViewController.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationEvents.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationItemViewController.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationPane.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationResource.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationsNavigationController.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationStyler.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveConversationUIButton.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveInputItem.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Conversation/SwrveInputMultiValue.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Locations/SwrveLocationCampaign.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Locations/SwrveLocationManager.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Locations/SwrveLocationMessage.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions/ISHPermissionRequest+All.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions/ISHPermissionRequest.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions/ISHPermissionRequestAddressBook.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions/ISHPermissionRequestLocation.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions/ISHPermissionRequestNotificationsRemote.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions/ISHPermissionRequestPhotoCamera.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Permissions/ISHPermissionRequestPhotoLibrary.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveBaseCampaign.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveButton.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveCampaign.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveImage.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveMessage.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveMessageController.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveMessageFormat.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveMessageViewController.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrvePermissions.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Talk/SwrveTalkQA.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Track/Swrve.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Track/SwrveReceiptProvider.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Track/SwrveResourceManager.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Track/SwrveSignatureProtectedFile.m" />
+        <file name="/Users/bbooth/work/swrve-ios-sdk/Sdk/Track/SwrveSwizzleHelper.m" />
+		<file name="iphone/JWSwrve.mm"/>
 		
 	</files>
 
@@ -26,7 +78,7 @@
 	
 	<set name="DEBUGEXTRA" value="-debug" if="fulldebug" />
 	
-	<target id="NDLL" output="${LIBPREFIX}jwfyber${MSVC_LIB_VERSION}${DEBUGEXTRA}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
+	<target id="NDLL" output="${LIBPREFIX}jwswrve${MSVC_LIB_VERSION}${DEBUGEXTRA}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
 		
 		<outdir name="../ndll/${BINDIR}"/>
 		<ext value=".ndll" if="windows || mac || linux"/>
