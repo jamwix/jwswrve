@@ -292,7 +292,7 @@ public class JWSwrve extends Extension {
 
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.SECOND, seconds);
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
     }
 
     public static void removeNotification() {
