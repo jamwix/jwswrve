@@ -2,8 +2,11 @@ package com.jamwix;
 
 
 import java.lang.Runnable;
+import java.util.Calendar;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.res.AssetManager;
 import android.content.Context;
 import android.content.Intent;
@@ -277,5 +280,29 @@ public class JWSwrve extends Extension {
         _pushData = "NULL";
         Log.i(TAG, "Returning push data: " + data);
         return data;
+    }
+
+    public static void scheduleNotification(int seconds) {
+        AlarmManager alarmManager = (AlarmManager) Extension.mainActivity.getSystemService(Context.ALARM_SERVICE);
+
+        Intent notificationIntent = new Intent("android.media.action.DISPLAY_NOTIFICATION");
+        notificationIntent.addCategory("android.intent.category.DEFAULT");
+
+        PendingIntent broadcast = PendingIntent.getBroadcast(Extension.mainActivity, 112980, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.SECOND, seconds);
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+    }
+
+    public static void removeNotification() {
+        AlarmManager alarmManager = (AlarmManager) Extension.mainActivity.getSystemService(Context.ALARM_SERVICE);
+
+        Intent notificationIntent = new Intent("android.media.action.DISPLAY_NOTIFICATION");
+        notificationIntent.addCategory("android.intent.category.DEFAULT");
+
+        PendingIntent broadcast = PendingIntent.getBroadcast(Extension.mainActivity, 112980, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        alarmManager.cancel(broadcast);
     }
 }

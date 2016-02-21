@@ -128,6 +128,8 @@ class JWSwrve {
 	{
 		#if ios
 		jwswrve_schedule_notification(message, uid, seconds);
+		#elseif android
+		jwswrve_schedule_notification(seconds);
 		#end
 	}
 
@@ -135,6 +137,8 @@ class JWSwrve {
 	{
 		#if ios
 		jwswrve_remove_notification(uid); 
+		#elseif android
+		jwswrve_remove_notification();
 		#end
 	}
 
@@ -244,6 +248,16 @@ class JWSwrve {
 		"com.jamwix.JWSwrve",
 		"getPushData",
 		"()Ljava/lang/String;"
+	);
+	private static var jwswrve_schedule_notification = JNI.createStaticMethod(
+		"com.jamwix.JWSwrve",
+		"scheduleNotification",
+		"(I)V"
+	);
+	private static var jwswrve_remove_notification = JNI.createStaticMethod(
+		"com.jamwix.JWSwrve",
+		"removeNotification",
+		"()V"
 	);
 	#elseif ios
 	private static var set_event_handle = Lib.load("jwswrve", "jwswrve_set_event_handle", 1);
